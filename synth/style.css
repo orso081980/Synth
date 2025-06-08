@@ -1,0 +1,55 @@
+body * {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hero-section {
+  position: relative;
+  background-color: #161616;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 1105px;
+  height: 190px;
+  top: 452px;
+  left: 598px;
+  border-radius: 1105px;
+  background: conic-gradient(from 180deg at 50% 50%,
+      rgba(0, 51, 255, 0.31) 0deg,
+      #a620ff 360deg);
+  filter: blur(160px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  all: unset;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  margin: 0 auto;
+}
+
+body::selection {
+  background: #2364AA;
+  color: white;
+}
