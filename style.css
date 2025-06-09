@@ -1,0 +1,115 @@
+body * {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body::selection {
+  background: #A620FF;
+  color: white;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  all: unset;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 1105px;
+  height: 190px;
+  top: 452px;
+  left: 598px;
+  border-radius: 1105px;
+  background: conic-gradient(from 180deg at 50% 50%,
+      rgba(0, 51, 255, 0.31) 0deg,
+      #a620ff 360deg);
+  filter: blur(160px);
+}
+
+.services::before {
+  content: "";
+  position: absolute;
+  width: 366px;
+  height: 366px;
+  top: -98px;
+  right: 0;
+  border-radius: 366px;
+  background: conic-gradient(from 180deg at 50% 50%, rgba(0, 51, 255, 0.31) 0deg, #A620FF 360deg);
+  filter: blur(107.05000305175781px);
+}
+
+.column-box::before {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  bottom: -78px;
+  left: -74px;
+  background: conic-gradient(from 180deg at 50% 50%, rgba(0, 51, 255, 0.31) 0deg, #A620FF 360deg);
+  filter: blur(52.95px);
+}
+
+.column-box:nth-of-type(2)::before {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  bottom: -78px;
+  right: -74px;
+  left: initial;
+  background: conic-gradient(from 180deg at 50% 50%, rgba(0, 51, 255, 0.31) 0deg, #A620FF 360deg);
+  filter: blur(52.95px);
+}
+
+.column-box:nth-of-type(3)::before {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  bottom: -78px;
+  right: -74px;
+  left: initial;
+  background: conic-gradient(from 180deg at 50% 50%, rgba(0, 51, 255, 0.31) 0deg, #A620FF 360deg);
+  filter: blur(52.95px);
+}
+
+.column-box:nth-of-type(4)::before {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: -24px;
+  left: -74px;
+  right: initial;
+  background: conic-gradient(from 180deg at 50% 50%, rgba(0, 51, 255, 0.31) 0deg, #A620FF 360deg);
+  filter: blur(52.95px);
+}
+
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  bottom: -46px;
+  left: -100px;
+  background: conic-gradient(from 180deg at 50% 50%, rgba(0, 51, 255, 0.31) 0deg, #A620FF 360deg);
+  filter: blur(52.95px);
+}
