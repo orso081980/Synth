@@ -132,7 +132,6 @@ body::selection {
   transition: all 0.3s ease;
 }
 
-/* Top & bottom borders */
 .button::before {
   height: 2px;
   width: 0;
@@ -147,7 +146,6 @@ body::selection {
   right: 0;
 }
 
-/* Left & right borders (optional) */
 .button span::before,
 .button span::after {
   content: "";

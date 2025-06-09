@@ -17,6 +17,7 @@
 </head>
 
 <body class="bg-white text-gray-900">
+
     <!-- Header -->
     <header class="w-full bg-[#161616] shadow-sm">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-30">
@@ -26,19 +27,20 @@
             </div>
             <!-- Menu -->
             <nav class="hidden md:flex space-x-8 ml-10 text-white">
-                <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1500">Product</a>
-                <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1500">Solutions</a>
-                <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1500">Resources</a>
-                <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1500">Company</a>
-                <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1500">Pricing</a>
+                <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Product</a>
+                <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Solutions</a>
+                <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Resources</a>
+                <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Company</a>
+                <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Pricing</a>
             </nav>
             <!-- Buttons -->
             <div class="flex items-center space-x-4 ml-6">
-                <a href="#" class="text-white font-medium hover:text-[#0033FF4F] transition-colors duration-1500">Sign up</a>
+                <a href="#" class="text-white font-medium hover:text-[#0033FF4F] transition-colors duration-1000">Sign up</a>
                 <a href="#" class="button btn-2 px-4 py-2 text-white font-semibold"><span>Get started</span></a>
             </div>
         </div>
     </header>
+
     <!-- Hero Section -->
     <section class="w-full h-[83vh] bg-[#161616] text-white relative overflow-hidden flex items-center justify-center hero-section">
         <div class="max-w-6xl mx-auto text-center px-4 relative z-10 w-full">
@@ -46,6 +48,8 @@
             <h2 class="text-xl sm:text-2xl font-medium mb-8">Where product, brand, and tech finally align</h2>
         </div>
     </section>
+
+    <!-- carousel -->
     <section class="relative bg-[#161616] pt-[4rem] pb-[4rem] border-t border-b border-[#636363]">
         <!-- Left Transparent Overlay -->
         <div class="absolute top-0 left-0 w-70 h-full bg-gradient-to-r from-[#161616] to-transparent pointer-events-none z-10 fade-left"></div>
@@ -87,9 +91,12 @@
             </div>
         </div>
     </section>
+
+
     <section class="text-center py-20 bg-[#161616]">
         <h2 class="text-4xl text-white">What We Offer</h2>
     </section>
+
     <section class="border-t border-b border-[#636363] bg-[#161616]">
         <div class="max-w-6xl mx-auto px-6">
             <div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
@@ -101,7 +108,7 @@
                         vision.
                     </p>
                 </div>
-                <div class="column-box relative overflow-hidden z-0 border-r border-l border-[#636363] p-6 py-12">
+                <div class="column-box bg-[#6363635e] relative overflow-hidden z-0 border-r border-l border-[#636363] p-6 py-12">
                     <img src="assets/frame-2.svg" alt="Placeholder" class="mb-4 w-auto max-w-full" />
                     <h3 class="text-xl font-semibold text-white pt-6 pb-8">Design Systems & UX Architecture</h3>
                     <p class="text-[#999999] mt-2">
@@ -125,43 +132,70 @@
             </div>
         </div>
     </section>
-    <section class="border-b border-[#636363] bg-[#161616] p-6 py-12">
+    
+    <section class="border-b border-[#636363] bg-[#161616]">
         <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2">
             <!-- Left Column -->
-            <div class="border-r border-[#636363]">
-                <h3 class="text-2xl font-bold text-white">Discover</h3>
-                <p class="text-[#636363] mt-2">
-                    We dive into your business goals, users, and context.
-                </p>
-                <a href="#" class="text-[#8CB0FF] font-semibold mt-4 inline-block pb-8 hover:text-[#A620FF] transition-colors duration-1500">
-                    Tell us your story first ->
-                </a>
-                <div class="pr-[6rem]">
-                    <div class="border-t border-[#636363] pt-4">
-                        <h4 class="text-xl font-semibold text-[#636363] flex items-center gap-2">
-                            Define <span class="text-[#8CB0FF]">+</span>
-                        </h4>
+            <div class="border-r border-[#636363] py-12 p-12">
+                <!-- Discover Section -->
+                <div class="toggle-section">
+                    <h3 class="text-2xl font-bold text-white flex items-center justify-between cursor-pointer">
+                        Discover 
+                        <span class="text-[#8CB0FF] toggle-btn">+</span>
+                    </h3>
+                    <div class="toggle-content">
+                        <p class="text-[#636363] mt-2">
+                            We dive into your business goals, users, and context.
+                        </p>
+                        <a href="#" class="text-[#8CB0FF] font-semibold mt-4 inline-block pb-8 hover:text-[#A620FF] transition-colors duration-1000">
+                            Tell us your story first ->
+                        </a>
                     </div>
-                    <div class="border-t border-[#636363] pt-4 mt-4">
-                        <h4 class="text-xl font-semibold text-[#636363] flex items-center gap-2">
-                            Design <span class="text-[#8CB0FF]">+</span>
-                        </h4>
+                </div>
+
+                <!-- Define Section -->
+                <div class="toggle-section border-t border-[#636363] pt-4 mt-4">
+                    <h3 class="text-xl font-semibold text-[#636363] flex items-center justify-between cursor-pointer">
+                        Define 
+                        <span class="text-[#8CB0FF] toggle-btn">+</span>
+                    </h3>
+                    <div class="toggle-content hidden">
+                        <p class="text-[#999999]">We clarify the challenge and craft a shared direction.</p>
+                        <p class="text-[#8CB0FF] font-semibold mt-4 inline-block pb-8 hover:text-[#A620FF] transition-colors duration-1000"><a href="#">How connect brand and product</a></p>
                     </div>
-                    <div class="border-t border-[#636363] border-b border-[#636363] pt-4 mt-4 pb-4">
-                        <h4 class="text-xl font-semibold text-[#636363] flex items-center gap-2">
-                            Deliver <span class="text-[#8CB0FF]">+</span>
-                        </h4>
+                </div>
+
+                <!-- Design Section -->
+                <div class="toggle-section border-t border-[#636363] pt-4 mt-4">
+                    <h3 class="text-xl font-semibold text-[#636363] flex items-center justify-between cursor-pointer">
+                        Design 
+                        <span class="text-[#8CB0FF] toggle-btn">+</span>
+                    </h3>
+                    <div class="toggle-content hidden">
+                        <p class="text-[#999999]">Systems, visuals, and flows — always aligned.</p>
+                        <p class="text-[#8CB0FF] font-semibold mt-4 inline-block pb-8 hover:text-[#A620FF] transition-colors duration-1000"><a href="#">How we build design systems</a></p>
+                    </div>
+                </div>
+
+                <!-- Deliver Section -->
+                <div class="toggle-section border-t border-[#636363] border-b border-[#636363] pt-4 mt-4 pb-4">
+                    <h3 class="text-xl font-semibold text-[#636363] flex items-center justify-between cursor-pointer">
+                        Deliver 
+                        <span class="text-[#8CB0FF] toggle-btn">+</span>
+                    </h3>
+                    <div class="toggle-content hidden">
+                        <p class="text-[#999999]">Systems, visuals, and flows — always aligned.</p>
+                        <p class="text-[#8CB0FF] font-semibold mt-4 inline-block pb-8 hover:text-[#A620FF] transition-colors duration-1000"><a href="#">How we bring designs to life</a></p>
                     </div>
                 </div>
             </div>
-            <!-- Right Column -->
-            <div class="">
-            </div>
         </div>
     </section>
+
     <section class="text-center py-20 bg-[#161616]">
         <h2 class="text-4xl text-white">Use our AI-tool to</h2>
     </section>
+
     <section class="border-t border-b border-r border-[#636363] bg-[#161616] services relative overflow-hidden">
         <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2">
             <!-- Left Column: Typical Consultancy -->
@@ -222,22 +256,24 @@
             </div>
         </div>
     </section>
+
     <section class="py-20 bg-[#161616]">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2">
             <!-- Left Column: Successful Stories -->
             <div class="md:pr-4 pl-4 text-left md:text-right border-r border-[#636363]">
-                <a href="#" class="text-[#8CB0FF] text-1xl font-semibold hover:text-[#A620FF] transition-colors duration-1500">
+                <a href="#" class="text-[#8CB0FF] text-1xl font-semibold hover:text-[#A620FF] transition-colors duration-1000">
                     Check our successful stories >
                 </a>
             </div>
             <!-- Right Column: Blog Insights -->
             <div class="pl-4 text-left">
-                <a href="#" class="text-[#8CB0FF] text-1xl font-semibold hover:text-[#A620FF] transition-colors duration-1500">
+                <a href="#" class="text-[#8CB0FF] text-1xl font-semibold hover:text-[#A620FF] transition-colors duration-1000">
                     Read our blog to get more insights >
                 </a>
             </div>
         </div>
     </section>
+
     <section class="bg-[#161616] flex justify-center pb-16">
         <div class="relative overflow-hidden z-0 testimonial-card max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 border border-[#636363] py-6">
             <!-- Left Column (1/3) -->
@@ -263,6 +299,8 @@
             </div>
         </div>
     </section>
+
+    <!-- footer -->
     <footer class="bg-[#161616] border-t border-[#636363] py-20">
         <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Left: Logo, tagline, socials -->
@@ -272,17 +310,17 @@
                     <p class="text-[#A3A3A3] text-base mb-6">No silos. Just synthesis.</p>
                     <div class="flex space-x-6">
                         <!-- LinkedIn -->
-                        <a href="#" aria-label="LinkedIn" class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition duration-300 hover:text-white">
+                        <a href="#" aria-label="LinkedIn" class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition duration-1000 hover:text-white">
                             <i class="fab fa-linkedin text-xl text-white"></i>
                         </a>
 
                         <!-- Instagram -->
-                        <a href="#" aria-label="Instagram" class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-[#E4405F] hover:bg-[#E4405F] hover:text-white transition duration-300 text-white">
+                        <a href="#" aria-label="Instagram" class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-[#E4405F] hover:bg-[#E4405F] hover:text-white transition duration-1000 text-white">
                             <i class="fab fa-instagram text-xl"></i>
                         </a>
 
                         <!-- YouTube -->
-                        <a href="#" aria-label="YouTube" class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-[#FF0000] hover:bg-[#FF0000] hover:text-white transition duration-300 text-white">
+                        <a href="#" aria-label="YouTube" class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-[#FF0000] hover:bg-[#FF0000] hover:text-white transition duration-1000 text-white">
                             <i class="fab fa-youtube text-xl"></i>
                         </a>
                     </div>
