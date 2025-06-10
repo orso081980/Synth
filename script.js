@@ -47,4 +47,26 @@ document.addEventListener("DOMContentLoaded", () => {
       title.classList.toggle("text-[#636363]");
     });
   });
+
+  // const mobileMenuBtn = document.getElementById("mobile-menu-button");
+  // const mobileMenu = document.getElementById("mobile-menu");
+  // const closeMenuBtn = document.getElementById("close-menu-btn");
+
+  // mobileMenuBtn.addEventListener("click", () => {
+  //   mobileMenu.classList.remove("hidden");
+  // });
+
+  // closeMenuBtn.addEventListener("click", () => {
+  //   mobileMenu.classList.add("hidden");
+  // });
+
+  document.querySelector("#mobile-menu-button").addEventListener("click", () => {
+    document.querySelector("#mobile-menu").classList.toggle("hidden");
+    bar1.classList.toggle("rotate-45");
+    bar1.classList.toggle("translate-y-[7px]");
+    bar2.classList.toggle("opacity-0");
+    bar3.classList.toggle("-rotate-45");
+    bar3.classList.toggle("-translate-y-2");
+  });
+
 });
