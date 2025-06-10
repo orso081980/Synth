@@ -32,26 +32,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
       document.querySelectorAll(".toggle-content").forEach((el) => {
         if (el !== content) {
-          el.classList.add("hidden");
+          el.classList.remove("max-h-[500px]");
+          el.classList.add("max-h-0");
           el.closest(".toggle-section").querySelector(".toggle-btn").textContent = "+";
-          const otherTitle = el.closest(".toggle-section").querySelector("h3");
-
-          otherTitle.classList.remove("text-white");
-          otherTitle.classList.add("text-[#636363]");
+          el.closest(".toggle-section").querySelector("h3").classList.replace("text-white", "text-[#636363]");
         }
       });
 
-      content.classList.toggle("hidden");
-      this.textContent = content.classList.contains("hidden") ? "+" : "−";
+      content.classList.toggle("max-h-0");
+      content.classList.toggle("max-h-[500px]");
+      this.textContent = content.classList.contains("max-h-0") ? "+" : "−";
 
-            // Toggle text color correctly
-      if (content.classList.contains("hidden")) {
-        title.classList.remove("text-white");
-        title.classList.add("text-[#636363]");
-      } else {
-        title.classList.remove("text-[#636363]");
-        title.classList.add("text-white");
-      }
+      title.classList.toggle("text-white");
+      title.classList.toggle("text-[#636363]");
     });
   });
 });
