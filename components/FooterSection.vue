@@ -4,7 +4,7 @@
       <!-- Left: Logo, tagline, socials -->
       <div class="flex flex-col items-start justify-between md:col-span-1">
         <div class="mb-6">
-          <a href="/"><img src="/assets/synt-logo.svg" alt="Logo" class="h-10"></a>
+          <a href="./"><img src="/assets/Vector.svg" alt="logo"></a>
           <p class="text-[#A3A3A3] text-base mt-[2rem] mb-[3rem]">No silos. Just synthesis.</p>
           <div class="flex space-x-6">
             <!-- LinkedIn -->

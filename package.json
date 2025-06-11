@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "predeploy": "touch .output/public/.nojekyll",
-    "deploy": "gh-pages -d .output/public -b gh-pages"
+    "deploy": "gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
     "nuxt": "^3.17.5",
