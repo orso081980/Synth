@@ -8,6 +8,12 @@ body::selection {
   color: white;
 }
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-section::before {
   content: "";
   position: absolute;
