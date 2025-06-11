@@ -8,7 +8,7 @@
   <ConsultancySection />
   <StoriesSection />
   <TestimonialSection
-    imageSrc="/assets/stephan.png"
+    imageSrc="assets/stephan.png"
     personName="Stephan Ryckeboer"
     personTitle="Head of Growth"
     quoteTitle="Simplicity takes effort"

@@ -2,7 +2,7 @@
   <HeaderSection />
   <HeroSolutionSection />
   <TestimonialSection
-    imageSrc="/assets/mayya.png"
+    imageSrc="assets/mayya.png"
     personName="Mayya Aprosina"
     personTitle="CEO & Business Designer"
     quoteTitle="A clear why shapes everything that follows."

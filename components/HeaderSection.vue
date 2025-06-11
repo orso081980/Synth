@@ -4,7 +4,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
       <!-- Logo (always visible) -->
       <div class="flex-shrink-0 flex items-center">
-        <a href="/"><img src="/assets/Vector.svg" alt="logo"></a>
+        <a href="./"><img src="/assets/Vector.svg" alt="logo"></a>
       </div>
       <!-- Hamburger Icon (Mobile Only) -->
       <button @click="toggleMenu" class="cursor-pointer lg:hidden text-[#6E0015] text-2xl" aria-label="Open menu">
@@ -17,7 +17,7 @@
       <!-- Desktop Menu -->
       <nav class="hidden md:flex space-x-8 ml-10 text-white">
         <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Product</a>
-        <a href="/solution" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Solutions</a>
+        <a href="solution" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Solutions</a>
         <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Resources</a>
         <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Company</a>
         <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Pricing</a>
