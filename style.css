@@ -8,28 +8,6 @@ body::selection {
   color: white;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  all: unset;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  margin: 0 auto;
-}
-
 .hero-section::before {
   content: "";
   position: absolute;
