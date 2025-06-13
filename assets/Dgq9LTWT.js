@@ -1,0 +1,1 @@
+import{_ as t}from"./DlAUqK2U.js";import{c as n,a as o,o as s}from"./BlLKT_kq.js";const r={};function a(c,e){return s(),n("div",null,e[0]||(e[0]=[o("h2",null,"Oops! Page not found.",-1),o("p",null,"Maybe this path doesn't exist?",-1)]))}const p=t(r,[["render",a]]);export{p as default};
