@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-[#161616] border-t border-[#636363] py-20">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
       <!-- Left: Logo, tagline, socials -->
       <div class="flex flex-col items-start justify-between md:col-span-1">
         <div class="mb-6">
@@ -55,7 +55,7 @@
       </div>
     </div>
     <!-- Bottom Footer Bar -->
-    <div class="max-w-6xl mx-auto pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="max-w-6xl mx-auto pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-4 px-6">
       <div class="text-white font-light text-left transition-colors duration-1000 hover:text-[#8CB0FF]"><a href="#">Privacy & Terms of Use</a></div>
       <div class="text-white font-light text-left md:text-right">© 2025 SyteSynth | All rights reserved.</div>
     </div>

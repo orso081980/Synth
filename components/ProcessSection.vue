@@ -2,7 +2,7 @@
   <section class="border-b border-[#636363] bg-[#161616]">
     <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2">
       <!-- Left Column -->
-      <div class="border-r border-[#636363] py-12 p-12">
+      <div class="border-r border-[#636363] py-12 pr-12">
         <!-- Discover Section (VISIBLE by default) -->
         <div class="toggle-section">
           <h3 :class="['flex items-center justify-between cursor-pointer', openIndex === 0 ? 'text-white text-2xl font-bold' : 'text-[#636363] text-xl font-semibold']" @click="toggle(0)">
@@ -58,11 +58,16 @@
           </div>
         </div>
       </div>
+      <!-- Right Column -->
+      <div class="">
+        <img :src="`${config.app.baseURL}/assets/gitest.png`" alt="Synth">
+      </div>
     </div>
   </section>
 </template>
 
 <script setup>
+const config = useRuntimeConfig()
 import { ref } from 'vue'
 
 // 0: Discover, 1: Define, 2: Design, 3: Deliver

@@ -1,10 +1,10 @@
 <template>
   <!-- Header -->
   <header class="w-full bg-[#161616] shadow-sm fixed top-0 left-0 z-50 py-4">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-20">
       <!-- Logo (always visible) -->
       <div class="flex-shrink-0 flex items-center">
-        <a href="./"><img src="/assets/Vector.svg" alt="logo"></a>
+        <NuxtLink to="/"><img src="/assets/Vector.svg" alt="logo"></NuxtLink>
       </div>
       <!-- Hamburger Icon (Mobile Only) -->
       <button @click="toggleMenu" class="cursor-pointer lg:hidden text-[#6E0015] text-2xl" aria-label="Open menu">
@@ -17,7 +17,7 @@
       <!-- Desktop Menu -->
       <nav class="hidden md:flex space-x-8 ml-10 text-white">
         <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Product</a>
-        <a href="solution" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Solutions</a>
+        <NuxtLink to="/solution" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Solutions</NuxtLink>
         <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Resources</a>
         <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Company</a>
         <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Pricing</a>
@@ -31,7 +31,7 @@
       <div :class="['fixed top-[112px] left-0 w-full h-[calc(100vh-5rem)] bg-[#161616] flex flex-col items-center pt-[5rem] space-y-6 text-white transition-transform duration-300', menuOpen ? '' : '-translate-x-full']">
         <nav class="flex flex-col space-y-4 text-center">
           <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Product</a>
-          <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Solutions</a>
+          <NuxtLink to="/solution" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Solutions</NuxtLink>
           <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Resources</a>
           <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Company</a>
           <a href="#" class="hover:text-[#A620FF] font-medium transition-colors duration-1000">Pricing</a>
@@ -61,6 +61,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import { NuxtLink } from '#components'
 
 const menuOpen = ref(false)
 
